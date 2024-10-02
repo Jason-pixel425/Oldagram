@@ -2,34 +2,43 @@
 
     <head>
         <link rel="stylesheet" href="index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <header class="flex-row-container hero">
-            <img src="images/logo.png" alt="Oldagram logo.">
-            <img src="./images/user-avatar.png" alt="User's avatar." />
+        <header class="container hero">
+            <img class="logo" src="images/logo.png" alt="Oldagram logo.">
+            <img class="small-round-img" src="./images/user-avatar.png" alt="User's avatar." />
         </header>
 
         <main>
             <section class="post">
 
                 <section class="poster">
-                    <img src="./images/avatar-vangogh.jpg" alt="Painting of Vincent Van Gogh." />
-                    <p>Vincent van Gogh</p>
-                    <p>Zudertm Netherlands</p>
+                    <div class="container post-head">
+                        <img class="small-round-img poster-avatar" src="./images/avatar-vangogh.jpg" alt="Painting of Vincent Van Gogh." />
+                        <div class="text-container">
+                            <p class="bold-text">Vincent van Gogh</p>
+                            <p>Zudertm Netherlands</p>
+                        </div>
+                    </div>
                 </section>
 
-                <img src="./images/post-vangogh.jpg" alt="Self portrait of Vincent Van Gogh." />
+                <img class="post-img" src="./images/post-vangogh.jpg" alt="Self portrait of Vincent Van Gogh." />
 
-                <section class="flex-row-container reactions">
-                    <div class="reaction-icons">
-                        <img src="./images/icon-heart.png" alt="Love Heart icon." />
-                        <img src="./images/icon-comment.png" alt="Comment icon." />
-                        <img src="./images/icon-dm.png" alt="Direct message icon." />
+                <section class="reactions">
+                    <div class="container reaction-icons">
+                        <img class="icon" src="./images/icon-heart.png" alt="Love Heart icon." />
+                        <img class="icon" src="./images/icon-comment.png" alt="Comment icon." />
+                        <img class="icon" src="./images/icon-dm.png" alt="Direct message icon." />
                     </div>
-                    <p class="bold-text">21,429 likes</p>
-                    <p><span class="bold-text">Vincey1853</span> just took a few mushrooms lol</p>
+                    <div class="container column">
+                        <p class="bold-text">21,429 likes</p>
+                        <p><span class="bold-text">Vincey1853</span> just took a few mushrooms lol</p>
+                    </div>
                 </section>
 
 
